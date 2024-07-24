@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Three.js Multidimensional Data View</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <dialog open id="dialog">
+        <h1>Help</h1>
+        <p>Press 'g' to toggle the grid on and off.</p>
+        <p>Use the slider to change the size of the grid.</p>
+        <p>Click on a sphere to see its coordinates.</p>
+        <p>Import an Excel file to add spheres to the scene.</p>
+        <p>Excel file must be in xlsx format.</p>
+        <p>Press 'h' to open / close help window</p>
+    </dialog>
+
+    
+    <div id="cont">
+        <canvas></canvas>
+        <div id="info-cont">
+            <div id="info">
+                <h2>Info Panel</h2>
+                <p class="info">This is where your info goes.</p>
+            </div>
+            <div class="controls">
+                <label for="grid">Size control</label>
+                <ul></ul>
+                <input type="range" min="10" max="1000" value="100" id="slider">
+                <p>size:
+                <p id="size">100/10</p>
+                </p>
+            </div>
+            <div class="inport">
+                <label for="file">Import Excel File</label>
+                <input disabled id="file" type="file">
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module">
+    </script>
+</body>
+
+</html>
