@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    document.querySelector("input").disabled = false;
+    document.getElementById("file").disabled = false;
 });
 
 renderer.domElement.addEventListener('click', (event) => {
